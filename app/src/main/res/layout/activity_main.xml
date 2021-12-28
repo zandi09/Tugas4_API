@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:background="@color/cardview_light_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Web Framework"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/txtFrameworkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="React"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:src="@drawable/react_icon"
+            />
+
+        <TextView
+            android:id="@+id/txtAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Author"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtOfficial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oficial website"
+            android:textSize="12sp"
+            android:autoLink="web"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:justificationMode="inter_word"
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="description"/>
+
+        <ProgressBar
+            android:id="@+id/loadingIndicator"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/lyCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnReact"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.5sp"
+                android:paddingRight="16.5sp"
+                android:text="React" />
+
+            <Button
+                android:id="@+id/btnVue"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnReact"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:text="Vue" />
+
+            <Button
+                android:id="@+id/btnAngularJS"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnVue"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:text="Ang" />
+
+            <Button
+                android:id="@+id/btnLaravel"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnReact"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:text="Lar" />
+
+            <Button
+                android:id="@+id/btnVaadin"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnVue"
+                android:layout_toRightOf="@+id/btnLaravel"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:text="Vdn" />
+
+            <Button
+                android:id="@+id/btnSpring"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAngularJS"
+                android:layout_toRightOf="@+id/btnVaadin"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:text="spr" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:text="Refresh" />
+
+</RelativeLayout>
